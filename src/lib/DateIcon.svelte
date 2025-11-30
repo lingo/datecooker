@@ -9,7 +9,7 @@
   };
 </script>
 
-<label class="dateicon" style={`border-radius: ${getBorderRadius(corner)}`} />
+<i class="dateicon" style={`border-radius: ${getBorderRadius(corner)}`}></i>
 
 <style type="text/css">
 
