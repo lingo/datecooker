@@ -163,7 +163,7 @@
     <Btn onpointerdown={lockDown} onpointerup={lockUp} checked={isLocked}>🔒</Btn>
     <Btn onclick={updateVal(-1)} --margin-left="-0.5em" --pad="0.75rem">-</Btn>
     <Btn onclick={updateVal(+1)}>+</Btn>
-    <Btn onclick={power} checked={isPowerOn}>⏼</Btn>
+    <Btn onclick={power} checked={isPowerOn}><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M7.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0v-6a.5.5 0 0 1 .5-.5m-2 1.8a.5.5 0 0 1-.3.7 5.5 5.5 0 0 0-3 6.2 5.5 5.5 0 0 0 1.8 3 5.5 5.5 0 1 0 5.8-9.2.5.5 0 1 1 .4-1 6.5 6.5 0 0 1 3.1 3.1 6.5 6.5 0 0 1-1.7 8 6.5 6.5 0 0 1-8.2 0 6.5 6.5 0 0 1-2.2-3.7 6.5 6.5 0 0 1 .5-4.3 6.5 6.5 0 0 1 3.1-3 .5.5 0 0 1 .7.2z" clip-rule="evenodd"/></svg></Btn>
   </div>
 </div>
 
