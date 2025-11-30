@@ -99,6 +99,12 @@ h1 {
   text-align: center;
 }
 
+p {
+  max-width: 40ch;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
 button {
   color: white;
   border: 1px solid transparent;
