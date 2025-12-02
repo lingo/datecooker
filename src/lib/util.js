@@ -1,11 +1,13 @@
 export const States = {
-    WAIT_SELECT: 2,
-    SELECTED: 3,
-    ADJUSTING: 4,
-    LOCK: 10,
+    OFF: 0,
+    OFF_LOCK: 10,
+    WAIT_SELECT: 20,
+    SELECTED: 30,
+    ADJUSTING: 40,
+    LOCK: 50,
   };
 
-export function getDateParts(now = new Date()) {
+export function getPartsFromDate(now = new Date()) {
   return [
     now.getDate(),
     now.getMonth() + 1,
@@ -16,7 +18,7 @@ export function getDateParts(now = new Date()) {
 }
 
 
-export function buildDate(values) {
+export function buildDateFromParts(values) {
   let d = new Date();
   const [ date, mon, year, hour, min ] = values;
   d.setFullYear(year);
@@ -26,3 +28,4 @@ export function buildDate(values) {
   d.setMinutes(min);
   return d;
 }
+
