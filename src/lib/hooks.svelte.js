@@ -1,8 +1,9 @@
+import { onDestroy } from 'svelte';
 
 export function useTimeout(callback, delay) {
   let timerId = 0;
 
-  return {
+  const timer = {
     start() {
       clearTimeout(timerId);
       timerId = setTimeout(() => {
@@ -14,6 +15,9 @@ export function useTimeout(callback, delay) {
       clearTimeout(timerId);
     }
   };
+
+  onDestroy(() => timer.cancel());
+  return timer;
 }
 
 export function createBlinkEffect(onComplete, interval = 500, maxBlinks = 8) {
@@ -42,6 +46,8 @@ export function createBlinkEffect(onComplete, interval = 500, maxBlinks = 8) {
       }
     }, interval);
   }
+
+  onDestroy(stop);
 
   return {
     get isOn() { return isBlinkOn; },
