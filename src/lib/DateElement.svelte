@@ -17,5 +17,7 @@
     justify-content: center;
 
     color: var(--color, white);
+
+    /* background: repeating-radial-gradient(circle, rgb(14, 0, 0) 0%, var(--bg-color, rgb(85, 0, 0)) 2.5%, rgb(16, 0, 0) 5%); */
   }
 </style>
