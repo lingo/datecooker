@@ -12,7 +12,7 @@ importers:
         specifier: ^6.2.1
         version: 6.2.1(svelte@5.45.2)(vite@7.2.4)
       svelte:
-        specifier: ^5.43.8
+        specifier: ^5.45.2
         version: 5.45.2
       vite:
         specifier: ^7.2.4
@@ -355,8 +355,8 @@ packages:
     resolution: {integrity: sha512-3sUqbMEc77XqpdNO7FRyRog+eW3ph+GYCbj+rK+uYyRMuwsVy0rMiVtPn+QJlKFvWP/1PYpapqYn0Me2knFn+A==}
     engines: {node: '>=0.10.0'}
 
-  devalue@5.5.0:
-    resolution: {integrity: sha512-69sM5yrHfFLJt0AZ9QqZXGCPfJ7fQjvpln3Rq5+PS03LD32Ost1Q9N+eEnaQwGRIriKkMImXD56ocjQmfjbV3w==}
+  devalue@5.8.1:
+    resolution: {integrity: sha512-4CXDYRBGqN+57wVJkuXBYmpAVUSg3L6JAQa/DFqm238G73E1wuyc/JhGQJzN7vUf/CMphYau2zXbfWzDR5aTEw==}
 
   esbuild@0.25.12:
     resolution: {integrity: sha512-bbPBYYrtZbkt6Os6FiTLCTFxvq4tt3JKall1vRwshA3fdVztsLAatFaZobhkBC8/BrPetoa0oksYoKXoG4ryJg==}
@@ -685,7 +685,7 @@ snapshots:
 
   deepmerge@4.3.1: {}
 
-  devalue@5.5.0: {}
+  devalue@5.8.1: {}
 
   esbuild@0.25.12:
     optionalDependencies:
@@ -793,7 +793,7 @@ snapshots:
       aria-query: 5.3.2
       axobject-query: 4.1.0
       clsx: 2.1.1
-      devalue: 5.5.0
+      devalue: 5.8.1
       esm-env: 1.2.2
       esrap: 2.2.0
       is-reference: 3.0.3
